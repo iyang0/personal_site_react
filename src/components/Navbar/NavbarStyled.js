@@ -32,7 +32,7 @@ export const NavLogo = styled(LinkRouter)`
   color: white;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   display: flex;
   align-items: center;
   margin-left: 24px;
@@ -49,7 +49,7 @@ export const HamburgerBar = styled.div`
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    cont-size: 1.8rem;
+    font-size: 1.8em;
     cursor:pointer;
     color: white;
   }
