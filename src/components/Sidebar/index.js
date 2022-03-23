@@ -1,12 +1,11 @@
 import React from 'react'
-import { SidebarContainer } from './SidebarStyled'
+import { CloseIcon, SidebarContainer } from './SidebarStyled'
 
 export default function index() {
   return (
-    <div>
-      <SidebarContainer>
-        test
-      </SidebarContainer>
-    </div>
+    <SidebarContainer>
+      <CloseIcon/>
+      test
+    </SidebarContainer>
   )
 };
