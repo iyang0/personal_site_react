@@ -6,10 +6,10 @@ import { CloseIcon,
   SidebarLink,
   SidebarMenu } from './SidebarStyled'
 
-export default function index() {
+export default function index({ isOpen, toggle }) {
   return (
-    <SidebarContainer>
-      <Icon>
+    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+      <Icon onClick={toggle}>
         <CloseIcon/>
       </Icon>
       <SidebarWrapper>

@@ -11,7 +11,7 @@ import {
 } from './NavbarStyled';
 
 
-export default function Navbar() {
+export default function Navbar( {toggle} ) {
   return (
     <div>
       <Nav>
@@ -19,7 +19,7 @@ export default function Navbar() {
           <NavLogo to='/'>
             <h1>Navtest</h1>
           </NavLogo>
-          <HamburgerBar>
+          <HamburgerBar onClick={ toggle }>
             <FaBars />
           </HamburgerBar>
           <NavMenu>
