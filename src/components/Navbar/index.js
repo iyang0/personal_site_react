@@ -26,6 +26,12 @@ export default function Navbar() {
             <NavItem>
               <NavLinkScroll to='about'>About</NavLinkScroll>
             </NavItem>
+            <NavItem>
+              <NavLinkScroll to="projects">Projects</NavLinkScroll>
+            </NavItem>
+            <NavItem>
+              <NavLinkScroll to="contact">Contact</NavLinkScroll>
+            </NavItem>
           </NavMenu>
         </NavbarContainer>
       </Nav>

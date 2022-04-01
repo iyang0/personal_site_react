@@ -1,5 +1,10 @@
 import React from 'react'
-import { CloseIcon, SidebarContainer, Icon } from './SidebarStyled'
+import { CloseIcon,
+  SidebarContainer,
+  Icon,
+  SidebarWrapper,
+  SidebarLink,
+  SidebarMenu } from './SidebarStyled'
 
 export default function index() {
   return (
@@ -7,7 +12,13 @@ export default function index() {
       <Icon>
         <CloseIcon/>
       </Icon>
-      test
+      <SidebarWrapper>
+        <SidebarMenu>
+          <SidebarLink to="about">About</SidebarLink>
+          <SidebarLink to="projects">projects</SidebarLink>
+          <SidebarLink to="contact">Contact</SidebarLink>
+        </SidebarMenu>
+      </SidebarWrapper>
     </SidebarContainer>
   )
 };
