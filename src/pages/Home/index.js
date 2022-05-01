@@ -1,18 +1,19 @@
-import React, {useState} from 'react';
+import React from 'react';
+import { useOutsideClick } from '../../hooks/outsideClick';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen, ref] = useOutsideClick(false);
 
-  function toggle(){
+  function toggleSidebar(){
     setIsOpen(!isOpen);
   }
 
   return (
     <div>
-      <Sidebar isOpen={isOpen} toggle={toggle}/>
-      <Navbar toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggleSidebar} innerRef={ref}/>
+      <Navbar toggle={toggleSidebar} />
     </div>
   )
 }
