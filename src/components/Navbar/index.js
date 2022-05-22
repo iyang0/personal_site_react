@@ -17,7 +17,7 @@ export default function Navbar( {toggle} ) {
       <Nav>
         <NavbarContainer>
           <NavLogo to='/'>
-            <h1>Navtest</h1>
+            <h1>Ivan</h1>
           </NavLogo>
           <HamburgerBar onClick={ toggle }>
             <FaBars />

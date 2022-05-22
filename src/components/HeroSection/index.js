@@ -2,17 +2,31 @@ import React from 'react';
 import {
   HeroContainer,
   HeroBg,
-  HeroText
+  HeroContent,
+  HeroHeader,
+  HeroText,
+  HeroBtnContainer
 } from './HeroSectionElements';
+import Btn from '../Btn';
 import bg from '../../images/background.jpg'; //credit: Stephen Leonardi from unsplash
 
 export default function HeroSection() {
   return (
     <HeroContainer>
       <HeroBg image={bg}>
-        <HeroText>
-          test
-        </HeroText>
+        <HeroContent>
+          <HeroHeader>
+            Ivan Yang
+          </HeroHeader>
+          <HeroText>
+            Fullstack Developer
+          </HeroText>
+          <HeroBtnContainer>
+            <Btn to='about'>
+              About Me
+            </Btn>
+          </HeroBtnContainer>
+        </HeroContent>
       </HeroBg>
     </HeroContainer>
   )

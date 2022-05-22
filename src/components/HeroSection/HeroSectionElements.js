@@ -25,15 +25,48 @@ export const HeroBg = styled.div`
   overflow: hidden;
 `
 
-export const HeroText = styled.div`
+export const HeroContent = styled.div`
   position: absolute;
-  font-size: 6rem;
-  text-align: center;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2;
+`
+
+export const HeroHeader = styled.h1`
+  font-size: 6rem;
+  text-align: center;
 
   color: white;
   -webkit-text-stroke: 1.5px;
   -webkit-text-stroke-color: black;
+
+  @media screen and (max-width: 780px){
+    font-size: 5rem;
+    -webkit-text-stroke: 1.2px;
+    -webkit-text-stroke-color: black;
+  }
+`
+
+export const HeroText = styled.p`
+  font-size: 2.5rem;
+  text-align: center;
+
+  color: white;
+  -webkit-text-stroke: .8px;
+  -webkit-text-stroke-color: black;
+
+  @media screen and (max-width: 780px){
+    font-size: 2rem;
+    -webkit-text-stroke: .7px;
+    -webkit-text-stroke-color: black;
+  }
+`
+
+export const HeroBtnContainer = styled.div`
+
 `
