@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {GoChevronDown} from 'react-icons/go'
 
 export const HeroContainer = styled.div`
   background: #38474e;
@@ -68,5 +69,12 @@ export const HeroText = styled.p`
 `
 
 export const HeroBtnContainer = styled.div`
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
+export const ChevronDown = styled(GoChevronDown)`
+  margin: auto;
 `
