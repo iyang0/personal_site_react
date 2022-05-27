@@ -11,7 +11,7 @@ export const HeroContainer = styled.div`
   z-index: 1;
 
   //gradiant effect to transition into content.
-  :before{
+  ::before{
     content:'';
     position: absolute;
     top: 0;
@@ -21,7 +21,7 @@ export const HeroContainer = styled.div`
     background: linear-gradient(
       180deg, 
       rgba(0, 0, 0, 0) 80%,
-      rgba(56, 	71, 78, .3) 100%);
+      rgba(56, 	71, 78, .7) 100%);
     z-index: 2;
   }
 `
