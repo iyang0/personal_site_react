@@ -12,27 +12,39 @@ import {
   BtnWrap,
   Col2,
   ImgWrap,
-  Img
+  Img,
 } from "./ContentElements";
 
-export default function ContentSection() {
+export default function ContentSection({
+  lightBg,
+  id,
+  imgStart,
+  topLine,
+  lightText,
+  headLine,
+  darkText,
+  description,
+  buttonLabel,
+  img,
+  alt,
+}) {
   return (
-    <ContentContainer>
+    <ContentContainer lightBg={lightBg} id={id}>
       <InfoWrapper>
-        <InfoRow>
+        <InfoRow imgStart={imgStart}>
           <Col1>
             <TextWrapper>
-              <TopLine>TopLine</TopLine>
-              <Heading>Heading</Heading>
-              <Subtitle>Subtitle</Subtitle>
+              <TopLine>{topLine}</TopLine>
+              <Heading lightText={lightText}>{headLine}</Heading>
+              <Subtitle darktext={darkText}>{description}</Subtitle>
               <BtnWrap>
-                <Btn to="home">Button</Btn>
+                <Btn to="home">{buttonLabel}</Btn>
               </BtnWrap>
             </TextWrapper>
           </Col1>
           <Col2>
             <ImgWrap>
-              <Img/>
+              <Img src={img} alt={alt} />
             </ImgWrap>
           </Col2>
         </InfoRow>

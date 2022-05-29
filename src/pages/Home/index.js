@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 import HeroSection from '../../components/HeroSection';
 import ContentSection from '../../components/ContentSection';
+import { aboutMeContent } from '../../components/ContentSection/Data';
 
 export default function Home() {
   const [isOpen, setIsOpen, ref] = useOutsideClick(false);
@@ -17,7 +18,7 @@ export default function Home() {
       <Sidebar isOpen={isOpen} toggle={toggleSidebar} innerRef={ref}/>
       <Navbar toggle={toggleSidebar} />
       <HeroSection />
-      <ContentSection />
+      <ContentSection {...aboutMeContent} />
     </div>
   )
 }
