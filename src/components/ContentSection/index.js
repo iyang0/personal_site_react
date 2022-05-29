@@ -4,12 +4,15 @@ import {
   ContentContainer,
   InfoWrapper,
   InfoRow,
-  Col,
+  Col1,
   TextWrapper,
   TopLine,
   Heading,
   Subtitle,
   BtnWrap,
+  Col2,
+  ImgWrap,
+  Img
 } from "./ContentElements";
 
 export default function ContentSection() {
@@ -17,7 +20,7 @@ export default function ContentSection() {
     <ContentContainer>
       <InfoWrapper>
         <InfoRow>
-          <Col>
+          <Col1>
             <TextWrapper>
               <TopLine>TopLine</TopLine>
               <Heading>Heading</Heading>
@@ -26,7 +29,12 @@ export default function ContentSection() {
                 <Btn to="home">Button</Btn>
               </BtnWrap>
             </TextWrapper>
-          </Col>
+          </Col1>
+          <Col2>
+            <ImgWrap>
+              <Img/>
+            </ImgWrap>
+          </Col2>
         </InfoRow>
       </InfoWrapper>
     </ContentContainer>

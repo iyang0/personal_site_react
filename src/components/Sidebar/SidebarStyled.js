@@ -13,7 +13,6 @@ export const SidebarContainer = styled.aside`
   top: 0;
   right: 0;
   transition: .4s ease-in-out;
-  opacity: 90%;
   //if the hamburger bar clicked, slide in from right and make avaliable
   //otherwise is hidden and to the right
   right: ${ ({ isOpen }) => (isOpen ? '0' : '-100%') };
@@ -40,11 +39,11 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(3, 80px);
   text-align: center;
 
   @media screen and (max-width: 480px){
-    grid-template-rows: repeat(6, 55px);
+    grid-template-rows: repeat(3, 55px);
   }
 `
 
