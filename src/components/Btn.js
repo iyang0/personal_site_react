@@ -1,12 +1,17 @@
-import styled from 'styled-components';
-import { Link } from 'react-scroll';
+import styled from "styled-components";
+import { Link } from "react-scroll";
+import {
+  themeBrown,
+  themeCloud,
+  themeOffBlack,
+} from "../consts/consts";
 
 export const Btn = styled(Link)`
   border-radius: 2rem;
-  background: ${ ({light}) => (light ? 'purple':'white') };
+  background: ${({ light }) => (light ? themeBrown : themeCloud)};
   white-space: nowrap;
-  padding: .75rem 2rem;
-  color: ${({light}) => (light ? 'white' : 'black')};
+  padding: 0.75rem 2rem;
+  color: ${({ light }) => (light ? "white" : themeOffBlack)};
   font-size: 1rem;
   outline: none;
   border: none;
@@ -14,12 +19,11 @@ export const Btn = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
-  &:hover { 
-    transition: all .2s ease-in-out;
-    background: ${({ light }) =>
-      (light ? 'white' : 'purple')};
-    color: ${({light}) => (light ? 'black' : 'white')};
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({ light }) => (light ? themeCloud : themeBrown)};
+    color: ${({ light }) => (light ? themeOffBlack : "white")};
   }
-`
+`;

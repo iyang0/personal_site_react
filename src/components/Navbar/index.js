@@ -13,28 +13,26 @@ import {
 
 export default function Navbar( {toggle} ) {
   return (
-    <div>
-      <Nav>
-        <NavbarContainer>
-          <NavLogo to='/'>
-            <h1>Ivan</h1>
-          </NavLogo>
-          <HamburgerBar onClick={ toggle }>
-            <FaBars />
-          </HamburgerBar>
-          <NavMenu>
-            <NavItem>
-              <NavLinkScroll to='about'>About</NavLinkScroll>
-            </NavItem>
-            <NavItem>
-              <NavLinkScroll to="projects">Projects</NavLinkScroll>
-            </NavItem>
-            <NavItem>
-              <NavLinkScroll to="contact">Contact</NavLinkScroll>
-            </NavItem>
-          </NavMenu>
-        </NavbarContainer>
-      </Nav>
-    </div>
+    <Nav>
+      <NavbarContainer>
+        <NavLogo to='/'>
+          <h1>Ivan</h1>
+        </NavLogo>
+        <HamburgerBar onClick={ toggle }>
+          <FaBars />
+        </HamburgerBar>
+        <NavMenu>
+          <NavItem>
+            <NavLinkScroll to='about'>About</NavLinkScroll>
+          </NavItem>
+          <NavItem>
+            <NavLinkScroll to="projects">Projects</NavLinkScroll>
+          </NavItem>
+          <NavItem>
+            <NavLinkScroll to="contact">Contact</NavLinkScroll>
+          </NavItem>
+        </NavMenu>
+      </NavbarContainer>
+    </Nav>
   )
 }

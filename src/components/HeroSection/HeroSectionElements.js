@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import {GoChevronDown} from 'react-icons/go'
+import { themeOffBlack } from "../../consts/consts";
 
 export const HeroContainer = styled.div`
-  background: #38474e;
+  background-color: ${themeOffBlack};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,13 +21,13 @@ export const HeroContainer = styled.div`
     right: 0;
     background: linear-gradient(
       180deg, 
-      rgba(0, 0, 0, 0) 80%,
-      rgba(56, 	71, 78, .7) 100%);
+      rgba(0, 0, 0, 0) 75%,
+      ${themeOffBlack} 100%);
     z-index: 2;
   }
 `
 
-export const HeroBg = styled.div`
+export const HeroBg1 = styled.div`
   position: absolute;
   top: 0;
   right: 0;
@@ -34,6 +35,19 @@ export const HeroBg = styled.div`
   left: 0;
   background-image: url(${props => props.image});
   background-color: #38474e;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+`
+export const HeroBg2 = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(${props => props.image});
   background-position: center;
   background-size: cover;
   width: 100%;

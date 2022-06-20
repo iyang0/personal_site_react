@@ -8,8 +8,9 @@ export const aboutMeContent = {
   topLine: "Hi, I'm Ivan Yang",
   headLine: "Fullstack Developer",
   description: `I am a native San Franciscan born and raised, graduated from SFSU in Economics and have turned to Software Engineering.
-  
-   I've had an interesting path taking me from underwriting for credit card processors to developing software. I have experience working with HTML, CSS, JavaScript(Express, Node, React), Python(Flask), and PostgreSQL.`,
+   I've had an interesting path taking me from underwriting for credit card processors to developing software. 
+   I have experience working with HTML, CSS, JavaScript(Express, Node, React), Python(Flask), and PostgreSQL.
+   I am now working as a backend engineer at UpLift.`,
   buttonLabel: "button",
   imgStart: false,
   img: profile,

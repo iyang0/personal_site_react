@@ -1,8 +1,15 @@
 import styled from "styled-components";
+import {
+  themeCloud,
+  themeOffBlack,
+  themePink,
+  themeRed,
+  themeTan,
+} from "../../consts/consts";
 
 export const ContentContainer = styled.div`
   color: white;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: ${({ lightBg }) => (lightBg ? themeCloud : themeOffBlack)};
 
   @media screen and (max-width: 780px) {
     padding: 100px 0;
@@ -12,17 +19,21 @@ export const ContentContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 100vh;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 780px) {
+    height: 150vh;
+  }
 `;
 
 export const InfoRow = styled.div`
-  display: gird;
+  display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
@@ -53,7 +64,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: ${themePink};
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -74,7 +85,7 @@ export const Heading = styled.div`
   }
 `;
 
-export const Subtitle = styled.div`
+export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 32px;
   font-size: 18px;
@@ -88,12 +99,12 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
+  max-width: 25rem;
   height: 100%;
 `;
 
 export const Img = styled.img`
   width: 100%;
-  margin: 0 0 10px 0;
   padding-right: 0;
+  border-radius: 15% 30% 15% 30% / 15% 30% 15% 30%;
 `;
