@@ -1,5 +1,4 @@
 import React from "react";
-import { Btn } from "../Btn";
 import {
   ContentContainer,
   InfoWrapper,
@@ -9,37 +8,33 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  BtnWrap,
   Col2,
   ImgWrap,
   Img,
+  BlendLight,
+  BlendDark,
 } from "./ContentElements";
 
 export default function ContentSection({
-  lightBg,
+  lightTheme,
   id,
   imgStart,
   topLine,
-  lightText,
   headLine,
-  darkText,
   description,
-  buttonLabel,
   img,
   alt,
+  lightNext,
 }) {
   return (
-    <ContentContainer lightBg={lightBg} id={id}>
+    <ContentContainer lightTheme={lightTheme} id={id} lightAfter={lightNext}>
       <InfoWrapper>
         <InfoRow imgStart={imgStart}>
           <Col1>
             <TextWrapper>
-              <TopLine>{topLine}</TopLine>
-              <Heading lightText={lightText}>{headLine}</Heading>
-              <Subtitle darktext={darkText}>{description}</Subtitle>
-              <BtnWrap>
-                <Btn to="home">{buttonLabel}</Btn>
-              </BtnWrap>
+              <TopLine lightTheme={lightTheme}>{topLine}</TopLine>
+              <Heading lightTheme={lightTheme}>{headLine}</Heading>
+              <Subtitle lightTheme={lightTheme}>{description}</Subtitle>
             </TextWrapper>
           </Col1>
           <Col2>
@@ -49,6 +44,7 @@ export default function ContentSection({
           </Col2>
         </InfoRow>
       </InfoWrapper>
+      {lightNext ? <BlendLight /> : <BlendDark />}
     </ContentContainer>
   );
 }

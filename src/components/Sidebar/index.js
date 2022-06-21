@@ -15,6 +15,7 @@ export default function Sidebar({ isOpen, toggle, innerRef }) {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
+          <SidebarLink to="interests" onClick={toggle}>Interests</SidebarLink>
           <SidebarLink to="projects" onClick={toggle}>projects</SidebarLink>
           <SidebarLink to="contact" onClick={toggle}>Contact</SidebarLink>
         </SidebarMenu>

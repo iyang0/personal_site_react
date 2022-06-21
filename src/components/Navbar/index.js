@@ -26,6 +26,9 @@ export default function Navbar( {toggle} ) {
             <NavLinkScroll to='about'>About</NavLinkScroll>
           </NavItem>
           <NavItem>
+            <NavLinkScroll to='interests'>Interests</NavLinkScroll>
+          </NavItem>
+          <NavItem>
             <NavLinkScroll to="projects">Projects</NavLinkScroll>
           </NavItem>
           <NavItem>

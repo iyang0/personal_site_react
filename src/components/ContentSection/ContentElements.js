@@ -9,7 +9,8 @@ import {
 
 export const ContentContainer = styled.div`
   color: white;
-  background: ${({ lightBg }) => (lightBg ? themeCloud : themeOffBlack)};
+  background: ${({ lightTheme }) => (lightTheme ? themeCloud : themeOffBlack)};
+  position: relative;
 
   @media screen and (max-width: 780px) {
     padding: 100px 0;
@@ -24,7 +25,7 @@ export const InfoWrapper = styled.div`
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
+  padding: 40px 24px 0;
   justify-content: center;
 
   @media screen and (max-width: 780px) {
@@ -60,11 +61,10 @@ export const Col2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
 `;
 
 export const TopLine = styled.p`
-  color: ${themePink};
+  color: ${({ lightTheme }) => (lightTheme ? themeRed : themePink)};
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -78,7 +78,7 @@ export const Heading = styled.div`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: ${({ lightTheme }) => (lightTheme ? "black" : "white")};
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -88,14 +88,9 @@ export const Heading = styled.div`
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 32px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "white")};
-`;
-
-export const BtnWrap = styled.div`
-  display: flex;
-  justify-content: flex-start;
+  color: ${({ lightTheme }) => (lightTheme ? "black" : "white")};
 `;
 
 export const ImgWrap = styled.div`
@@ -106,5 +101,45 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
   width: 100%;
   padding-right: 0;
-  border-radius: 15% 30% 15% 30% / 15% 30% 15% 30%;
+  border-radius: 15% 30% 15% 30%;
+`;
+
+export const ExternalLink = styled.a`
+  text-decoration: none;
+  color: ${themeTan};
+  transition: ease-in-out 0.2s;
+
+  :hover {
+    color: ${themePink};
+  }
+`;
+
+export const BlendLight = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      ${themeCloud} 100%
+     );
+  height: 3.5rem;
+  width: 100%;
+  z-index: 2;
+`;
+
+export const BlendDark = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      ${themeOffBlack} 100%
+     );
+  height: 3.5rem;
+  width: 100%;
+  z-index: 2;
 `;

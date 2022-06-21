@@ -105,5 +105,5 @@ export const HeroBtnContainer = styled.div`
 `
 
 export const ChevronDown = styled(GoChevronDown)`
-  margin: auto;
+  margin: .06rem 1.65rem;
 `

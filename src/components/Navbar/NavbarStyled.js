@@ -1,7 +1,12 @@
 import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
-import { themeCloud, themeOffBlack, themeRed, themeTan } from "../../consts/consts";
+import {
+  themeCloud,
+  themeOffBlack,
+  themeRed,
+  themeTan,
+} from "../../consts/consts";
 
 export const Nav = styled.nav`
   background: ${themeOffBlack};
@@ -28,7 +33,6 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
-
 `;
 
 export const NavLogo = styled(LinkRouter)`
@@ -63,7 +67,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  margin-right: -1rem;
 
   @media screen and (max-width: 780px) {
     display: none;
@@ -84,6 +88,6 @@ export const NavLinkScroll = styled(LinkScroll)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 5px solid ${themeTan};
+    border-bottom: 5px double ${themeTan};
   }
 `;
