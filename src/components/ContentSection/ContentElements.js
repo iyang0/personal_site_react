@@ -29,7 +29,7 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 780px) {
-    height: 150vh;
+    height: 130vh;
   }
 `;
 
@@ -127,6 +127,10 @@ export const BlendLight = styled.div`
   height: 3.5rem;
   width: 100%;
   z-index: 2;
+
+  @media screen and (max-width: 780px) {
+    height: 2rem;
+  }
 `;
 
 export const BlendDark = styled.div`
@@ -142,4 +146,8 @@ export const BlendDark = styled.div`
   height: 3.5rem;
   width: 100%;
   z-index: 2;
+
+  @media screen and (max-width: 780px) {
+    height: 2rem;
+  }
 `;

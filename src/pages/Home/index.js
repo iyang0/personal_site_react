@@ -5,6 +5,7 @@ import Sidebar from '../../components/Sidebar';
 import HeroSection from '../../components/HeroSection';
 import ContentSection from '../../components/ContentSection';
 import { aboutMeContent, interestsContent } from '../../components/ContentSection/Data';
+import ListSection from '../../components/ListSection';
 
 export default function Home() {
   const [isOpen, setIsOpen, ref] = useOutsideClick(false);
@@ -20,6 +21,7 @@ export default function Home() {
       <HeroSection />
       <ContentSection {...aboutMeContent} />
       <ContentSection {...interestsContent} />
+      <ListSection />
     </div>
   )
 }

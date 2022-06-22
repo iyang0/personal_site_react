@@ -26,9 +26,9 @@ export const interestsContent = {
   description: `I am a lover of the usual staples of geek culture.
   I play lots of Magic: the Gathering, mainly limited and commander;
   read manga, some of my favorites like Spirit Circle are pictured;
-  and like many people, I love video-games`,
+  and like many people, I love video-games.`,
   imgStart: true,
   img: hobbies,
   alt: "My hobbies: manga, mtg, and games",
-  lightNext: true
+  lightNext: false
 };
