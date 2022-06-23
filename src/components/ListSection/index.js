@@ -12,7 +12,7 @@ import {
 export default function ListSection() {
   return (
     <ListContainer>
-      <ListTitle>Projects</ListTitle>
+      <ListTitle id="projects">Projects</ListTitle>
       <ItemsWrapper>
         <ItemCard>
           <a href="https://ivan-yang.xyz/">deployed</a>

@@ -2,20 +2,13 @@ import styled from "styled-components";
 import { themeCloud, themeOffBlack } from "../../consts/consts";
 
 export const ListContainer = styled.div`
-  height: 800px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: ${themeOffBlack};
-
-  @media screen and (max-width: 780px) {
-    height: 1100px;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 1300px;
-  }
+  padding: 2rem 0;
 `;
 
 export const ItemsWrapper = styled.div`
@@ -33,6 +26,7 @@ export const ItemsWrapper = styled.div`
 
   @media screen and (max-width: 780px) {
     grid-template-columns: 1fr;
+    margin: 2rem;
     padding: 0 20px;
   }
 `;

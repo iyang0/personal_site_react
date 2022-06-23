@@ -15,7 +15,7 @@ export default function Navbar( {toggle} ) {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to='/'>
+        <NavLogo to='top'>
           <h1>Ivan</h1>
         </NavLogo>
         <HamburgerBar onClick={ toggle }>
@@ -29,10 +29,10 @@ export default function Navbar( {toggle} ) {
             <NavLinkScroll to='interests'>Interests</NavLinkScroll>
           </NavItem>
           <NavItem>
-            <NavLinkScroll to="projects">Projects</NavLinkScroll>
+            <NavLinkScroll to='projects'>Projects</NavLinkScroll>
           </NavItem>
           <NavItem>
-            <NavLinkScroll to="contact">Contact</NavLinkScroll>
+            <NavLinkScroll to='contact'>Contact</NavLinkScroll>
           </NavItem>
         </NavMenu>
       </NavbarContainer>

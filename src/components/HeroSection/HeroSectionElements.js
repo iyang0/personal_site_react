@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {GoChevronDown} from 'react-icons/go'
+import {GoChevronDown} from 'react-icons/go';
 import { themeOffBlack } from "../../consts/consts";
 
 export const HeroContainer = styled.div`
