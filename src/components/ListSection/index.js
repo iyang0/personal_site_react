@@ -11,8 +11,8 @@ import {
 
 export default function ListSection() {
   return (
-    <ListContainer>
-      <ListTitle id="projects">Projects</ListTitle>
+    <ListContainer id="projects">
+      <ListTitle>Projects</ListTitle>
       <ItemsWrapper>
         <ItemCard>
           <a href="https://ivan-yang.xyz/">deployed</a>

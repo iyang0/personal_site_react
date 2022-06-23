@@ -8,7 +8,8 @@ export const ListContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: ${themeOffBlack};
-  padding: 2rem 0;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
 `;
 
 export const ItemsWrapper = styled.div`
@@ -59,7 +60,7 @@ export const ItemImage = styled.img`
 export const ListTitle = styled.h1`
   font-size: 2.5rem;
   color: ${themeCloud};
-  margin-bottom: 64px;
+  margin-bottom: 2rem;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;

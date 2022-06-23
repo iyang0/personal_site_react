@@ -46,16 +46,16 @@ export const FooterLink = styled.a`
 `;
 
 export const Linkedin = styled(FaLinkedin)`
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: ${themeOffBlack};
 `;
 
 export const Github = styled(FaGithubSquare)`
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: ${themeOffBlack};
 `;
 
 export const Email = styled(MdEmail)`
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: ${themeOffBlack};
 `;
