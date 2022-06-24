@@ -23,10 +23,18 @@ export default function ListSection() {
       <ListTitle>Projects</ListTitle>
       <ItemsWrapper>
         <ItemCard>
-          <LinkLeft href="https://ivan-yang.xyz/">
+          <LinkLeft
+            href="https://ivan-yang.xyz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LeftLinkWrap>deployed</LeftLinkWrap>
           </LinkLeft>
-          <LinkRight href="https://github.com/iyang0/personal_site_react">
+          <LinkRight
+            href="https://github.com/iyang0/personal_site_react"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <RightLinkWrap>github</RightLinkWrap>
           </LinkRight>
           <ItemImage src={personal} />
@@ -36,25 +44,41 @@ export default function ListSection() {
           </ItemDescription>
         </ItemCard>
         <ItemCard>
-          <LinkLeft href="https://jobly-backend-ivan.herokuapp.com/companies">
+          <LinkLeft
+            href="https://jobly-backend-ivan.herokuapp.com/companies"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LeftLinkWrap>deployed</LeftLinkWrap>
           </LinkLeft>
-          <LinkRight href="https://github.com/iyang0/jobly-backend">
+          <LinkRight
+            href="https://github.com/iyang0/jobly-backend"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <RightLinkWrap>github</RightLinkWrap>
           </LinkRight>
           <ItemImage src={joblyBack} />
           <ItemTitle>Jobly Backend</ItemTitle>
           <ItemDescription>
             The backend to an API to a mock jobs listing site made using
-            JS/express. The main point of interest is
-            authentication and authorization using JWTs.
+            JS/express. The main point of interest is authentication and
+            authorization using JWTs.
           </ItemDescription>
         </ItemCard>
         <ItemCard>
-          <LinkLeft href="https://jobly-ivan.surge.sh/">
+          <LinkLeft
+            href="https://jobly-ivan.surge.sh/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LeftLinkWrap>deployed</LeftLinkWrap>
           </LinkLeft>
-          <LinkRight href="https://github.com/iyang0/jobly-backend">
+          <LinkRight
+            href="https://github.com/iyang0/react-jobly"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <RightLinkWrap>github</RightLinkWrap>
           </LinkRight>
           <ItemImage src={joblyFront} />
@@ -65,10 +89,18 @@ export default function ListSection() {
           </ItemDescription>
         </ItemCard>
         <ItemCard>
-          <LinkLeft href="https://warbler-ivan-lance.herokuapp.com/">
+          <LinkLeft
+            href="https://warbler-ivan-lance.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LeftLinkWrap>deployed</LeftLinkWrap>
           </LinkLeft>
-          <LinkRight href="https://github.com/iyang0/warbler">
+          <LinkRight
+            href="https://github.com/iyang0/warbler"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <RightLinkWrap>github</RightLinkWrap>
           </LinkRight>
           <ItemImage src={warbler} />
