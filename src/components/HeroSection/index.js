@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   HeroContainer,
   HeroBg1,
@@ -16,6 +16,15 @@ import bg2 from "../../images/background-paralax-2.png";
 
 export default function HeroSection() {
   const [hover, setHover] = useState(false);
+  const [offsetY, setOffsetY] = useState(0);
+
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleHover = () => {
     setHover((prevState) => !prevState);
@@ -23,13 +32,13 @@ export default function HeroSection() {
 
   return (
     <HeroContainer>
-      <HeroBg1 image={bg1}>
-        <HeroBg2 image={bg2}>
-          <HeroContent>
-            <HeroHeader>Ivan Yang</HeroHeader>
-            <HeroText>Fullstack Developer</HeroText>
-            <HeroBtnContainer>
-              <Btn
+      <HeroBg1 image={bg1} offset={offsetY} />
+      <HeroBg2 image={bg2} offset={offsetY} />
+      <HeroContent>
+        <HeroHeader>Ivan Yang</HeroHeader>
+        <HeroText>Fullstack Developer</HeroText>
+        <HeroBtnContainer>
+          <Btn
                 to="about"
                 dark="true"
                 onMouseEnter={toggleHover}
@@ -37,10 +46,8 @@ export default function HeroSection() {
               >
                 {hover ? <ChevronDown/> : "About Me" }
               </Btn>
-            </HeroBtnContainer>
-          </HeroContent>
-        </HeroBg2>
-      </HeroBg1>
+        </HeroBtnContainer>
+      </HeroContent>
     </HeroContainer>
   );
 }

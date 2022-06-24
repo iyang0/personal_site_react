@@ -9,6 +9,7 @@ export const HeroContainer = styled.div`
   align-items: center;
   height: 95vh;
   position: relative;
+  overflow:hidden;
   z-index: 1;
 
   //gradiant effect to transition into content.
@@ -34,11 +35,11 @@ export const HeroBg1 = styled.div`
   bottom: 0;
   left: 0;
   background-image: url(${props => props.image});
-  background-color: #38474e;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 100%;
+  transform: translateY(${props => props.offset * 0.5}px);
   overflow: hidden;
 `
 export const HeroBg2 = styled.div`
@@ -52,6 +53,7 @@ export const HeroBg2 = styled.div`
   background-size: cover;
   width: 100%;
   height: 100%;
+  transform: translateY(${props => props.offset * 0.25}px);
   overflow: hidden;
 `
 
