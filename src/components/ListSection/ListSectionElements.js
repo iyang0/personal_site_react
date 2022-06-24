@@ -13,7 +13,6 @@ export const ListContainer = styled.div`
 `;
 
 export const ItemsWrapper = styled.div`
-  /* max-width: 1000px; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
